@@ -28,8 +28,8 @@
     "InversifyJS",
     "express"
   ],
-  "author": "Cody Simms",
-  "license": "MIT",
+  "author": "Namecheap company",
+  "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/namecheap/express-inversify/issues"
   },
