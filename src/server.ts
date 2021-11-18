@@ -201,8 +201,9 @@ export class InversifyExpressServer {
                     res: express.Response,
                     next: express.NextFunction,
                 ): void => {
-                    const mReq = this._container.get<BaseMiddleware>(middlewareItem);
-                    (mReq).httpContext = this._getHttpContext(req);
+                    const httpContext = this._getHttpContext(req);
+                    const mReq = httpContext.container.get<BaseMiddleware>(middlewareItem);
+                    (mReq as any).httpContext = httpContext;
                     mReq.handler(req, res, next);
                 };
             }
