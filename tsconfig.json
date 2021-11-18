@@ -6,6 +6,7 @@
         "alwaysStrict": true,
         "emitDecoratorMetadata": true,
         "declaration": true,
+        "declarationDir": "dts",
         "experimentalDecorators": true,
         "jsx": "react",
         "lib": [
