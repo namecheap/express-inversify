@@ -269,7 +269,7 @@ export class InversifyExpressServer {
                     value();
                 } else if (!res.headersSent) {
                     if (value === undefined) {
-                        res.status(204);
+                        res.status(200);
                     }
                     res.send(value);
                 }

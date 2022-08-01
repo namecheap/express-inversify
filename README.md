@@ -56,7 +56,7 @@ export class FooController implements interfaces.Controller {
     @httpDelete('/:id')
     private delete(@requestParam('id') id: string, @response() res: express.Response): Promise<void> {
         return this.fooService.delete(id)
-            .then(() => res.sendStatus(204))
+            .then(() => res.sendStatus(200))
             .catch((err: Error) => {
                 res.status(400).json({ error: err.message });
             });
