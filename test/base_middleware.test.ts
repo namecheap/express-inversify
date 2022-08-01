@@ -265,7 +265,7 @@ describe('BaseMiddleware', () => {
         .expect(200, 'I am transaction #2');
         await supertest(app)
         .get('/transactional-tests/2')
-        .expect(204, '');
+        .expect(200, '');
     });
 
     it('Should allow constructor injections from http-scope in middlewares', async () => {

@@ -247,7 +247,7 @@ describe('Integration Tests:', () => {
             server = new InversifyExpressServer(container);
             supertest(server.build())
             .delete('/user')
-            .expect(204, '', done);
+            .expect(200, '', done);
         });
     });
 
