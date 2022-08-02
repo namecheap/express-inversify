@@ -1,6 +1,6 @@
 {
   "name": "@namecheap/express-inversify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Some utilities for the development of express applications with Inversify",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
