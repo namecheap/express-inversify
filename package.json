@@ -40,7 +40,6 @@
     "@commitlint/config-conventional": "^19.5.0",
     "@types/async": "3.2.8",
     "@types/cookie-parser": "1.4.2",
-    "@types/express": "4.17.13",
     "@types/jest": "27.0.2",
     "@types/node": "16.10.1",
     "@types/sinon": "10.0.4",
@@ -68,6 +67,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "@types/express": "^4.17.1",
     "http-status-codes": "^2.1.4",
     "inversify": "^5.1.1"
   },
